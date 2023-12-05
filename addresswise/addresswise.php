@@ -2,12 +2,12 @@
 /**
  *
  * Plugin Name: AddressWise
- * Plugin URI: https://example.com/plugin-info
+ * Plugin URI: https://github.com/niketmandalia/addresswise-woocommerce-plugin
  * Description: Woocommerce plugin for autocompleting addresses in New Zealand and Australia.
  * Version: 1.0.0
  * Requires at least: 5.2
  * Requires PHP: 7.4 or later
- * Author: Kunal Goyal
+ * Author: AddressWise
  * License: GPL v3 or later
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html
  */
