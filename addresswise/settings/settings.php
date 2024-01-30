@@ -1,5 +1,8 @@
 <?php
 
+// Security check to prevent direct file access
+if (!defined('ABSPATH')) exit;
+
 /**
  * Create Settings Menu
  */
@@ -31,9 +34,6 @@ function addresswise_settings_template_callback()
             if (isset($_POST['addresswise_settings_input_field'])) {
                 // Data from the form is being sent
                 $input_value = sanitize_text_field($_POST['addresswise_settings_input_field']);
-
-                ini_set('display_errors', 1);
-                error_reporting(E_ALL);
 
                 update_option('addresswise_settings_input_field', $input_value);
 

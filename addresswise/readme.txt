@@ -1,8 +1,8 @@
 === AddressWise ===
 Contributors: addresswisenz
-Tags: addressWise, autocomplete, address, checkout, plugin
+Tags: AddressWise, autocomplete, address, checkout, plugin
 Requires at least: 6.2
-Tested up to: 5.0
+Tested up to: 6.4
 Stable tag: 1.0.0
 Requires PHP: 7.4.33
 License: GPLv3 or later
@@ -47,7 +47,7 @@ This section describes how to install the plugin and get it working.
 2.Enter <AddressWise> into the search field, and press enter
 3. Press the Install Now button
 4.Click the Activate link
-5.Use the Wordpress dashboard to find the AddressWise plugin settings to input your client token.This is our client token which can be used for testing - 6959345369338
+5.Use the Wordpress dashboard to find the AddressWise plugin settings to input the client token which is 6959345369338
 6.Don't forget to test! Go to your store and to the checkout page. When you start to input an address, you should now see the plugin at work. Well done, you are all set up!
 
 == Screenshots ==
