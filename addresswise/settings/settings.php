@@ -30,15 +30,17 @@ function addresswise_settings_template_callback()
     <div class="wrap">
         <form action="" method="post">
             <?php
-            // Check if the form is submitted and the 'addresswise_settings_input_field' parameter is in the $_POST array
-            if (isset($_POST['addresswise_settings_input_field'])) {
+            // Nonce field for verification
+            wp_nonce_field( 'addresswise_settings_nonce', 'addresswise_settings_nonce_field' );
+
+            if ( isset( $_POST['addresswise_settings_input_field'] ) && wp_verify_nonce( $_POST['addresswise_settings_nonce_field'], 'addresswise_settings_nonce' ) ) {
                 // Data from the form is being sent
                 $input_value = sanitize_text_field($_POST['addresswise_settings_input_field']);
 
                 update_option('addresswise_settings_input_field', $input_value);
 
 
-                // Display a success message or perform any other necessary actions
+                // Display a success message
                 echo '<div class="updated"><p>Settings saved successfully!</p></div>';
             }
 
